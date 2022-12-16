@@ -1,0 +1,60 @@
+@import "fonts"
+@import "vars"
+
+footer
+	padding: 100px 0
+	position: relative
+	z-index: -1
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		height: 1311px
+		background: url('../img/footer-bg.svg') no-repeat center top
+		background-size: cover
+		bottom: 0
+		left: 50%
+		transform: translate(-50%,0)
+		z-index: -1
+	.menu
+		margin: 0 0 0 172px
+
+
+.list-social
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 0 auto
+	li
+		margin: 0 10px 0 0
+		&:last-child
+			margin: 0
+		a
+			padding: 6px
+			@include d-flex
+			background: #6D3BF7
+			width: 30px
+			min-width: 30px
+			height: 30px
+			border-radius: 50%
+			&:hover
+				background: $hover
+		.tg-link
+			padding: 9px 8px 7px 6px		
+
+
+.copyright
+	font-size: 12px
+	color: #C2CFEA
+
+.btn-scroll-top
+	display: flex
+	align-items: center
+	color: #fff
+	font-size: 12px
+	&:hover
+		color: $hover
+	&__icon
+		@include d-flex
+		margin: 0 4px 0 0
+		width: 9px

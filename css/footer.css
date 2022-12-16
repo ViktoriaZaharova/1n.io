@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+footer {
+  padding: 100px 0;
+  position: relative;
+  z-index: -1;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1311px;
+  background: url("../img/footer-bg.svg") no-repeat center top;
+  background-size: cover;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  z-index: -1;
+}
+footer .menu {
+  margin: 0 0 0 172px;
+}
+
+.list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+.list-social li {
+  margin: 0 10px 0 0;
+}
+.list-social li:last-child {
+  margin: 0;
+}
+.list-social li a {
+  padding: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #6D3BF7;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.list-social li a:hover {
+  background: #8E9FC5;
+}
+.list-social li .tg-link {
+  padding: 9px 8px 7px 6px;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #C2CFEA;
+}
+
+.btn-scroll-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
+.btn-scroll-top:hover {
+  color: #8E9FC5;
+}
+.btn-scroll-top__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 4px 0 0;
+  width: 9px;
+}

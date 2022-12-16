@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+header {
+  padding: 27px 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  background: linear-gradient(105.85deg, rgba(38, 42, 69, 0.29) 3.25%, rgba(31, 38, 54, 0) 102.93%);
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+.logo:hover {
+  color: #fff;
+}
+.logo .color-accent {
+  color: #6D3BF7;
+}
+
+.logo-text {
+  font-family: "Happy Monkey", sans-serif;
+}
+
+.logo-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 5px 0 0;
+  width: 40px;
+}
+
+.menu {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 0 119px;
+  font-size: 14px;
+}
+.menu li {
+  margin: 0 20px 0 0;
+}
+.menu li:last-child {
+  margin: 0;
+}
+.menu li a {
+  color: #fff;
+  position: relative;
+}
+.menu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #8E9FC5;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.menu li a:hover {
+  color: #8E9FC5;
+}
+.menu li a:hover::before {
+  width: 50%;
+}
+
+.link-entrance {
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link-entrance__icon {
+  width: 22px;
+  min-width: 22px;
+  height: 20px;
+  margin: 0 4px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: none;
+  stroke: #fff;
+}
+.link-entrance:hover {
+  color: #8E9FC5;
+}
+.link-entrance:hover .link-entrance__icon {
+  stroke: #8E9FC5;
+}

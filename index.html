@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<!-- add plugins css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- add plugins css end -->
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo">
+						<span class="logo-icon"><img src="img/logo.svg" alt=""></span>
+						<span class="logo-text">1n<span class="color-accent">.io</span></span>
+					</a>
+
+					<ul class="menu my-ul">
+						<li><a href="#services" class="go_to">Услуги</a></li>
+						<li><a href="#tariffs" class="go_to">Тарифы</a></li>
+						<li><a href="#modules" class="go_to">Готовые модули</a></li>
+						<li><a href="#help" class="go_to">Помощь</a></li>
+					</ul>
+
+					<a href="#" class="link-entrance">
+						<span class="link-entrance__icon"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#entrance"></use>
+							</svg></span>
+						<span class="link-entrance__text">Войти</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="home">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-12 col-lg-6">
+					<div class="home-content">
+						<div class="connection">Быстрое подключение</div>
+						<h1>Универсальный сервис для приема онлайн-платежей</h1>
+						<div class="subtitle">
+							<p>Удобные способы оплаты для ваших покупателей. Простая интеграция, моментальный вывод средств.</p>
+						</div>
+						<a href="#" class="btn btn-accent">Подключить</a>
+
+						<div class="row">
+							<div class="col-4">
+								<div class="home-advantages-box">
+									<p>>10к</p>
+									<span>Транзакций ежедневно</span>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="home-advantages-box">
+									<p>5.2м</p>
+									<span>Всего транзакций</span>
+								</div>
+							</div>
+							<div class="col-4">
+								<div class="home-advantages-box">
+									<p>59к</p>
+									<span>Пользователей со всего мира</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div class="home-image"><img src="img/home-image.png" alt=""></div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<section class="tariffs" id="tariffs">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<h2>Тарифы</h2>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button class="nav-link active" id="nav-tab1" data-bs-toggle="tab" data-bs-target="#tab1" type="button"
+								role="tab" aria-controls="tab1" aria-selected="true">Ввод</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button class="nav-link" id="nav-tab2" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+								role="tab" aria-controls="tab2" aria-selected="false">Вывод</button>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-12">
+					<div class="tab-content">
+						<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-tab1">
+							<div class="tariffs-card">
+								<div class="row align-items-center">
+									<div class="col-12 col-lg-4 col-md-4">
+										<div class="tariffs-card__name">
+											<div class="tariffs-card__icon"><img src="img/tariffs-icon1.svg" alt=""></div>
+											<h3>Карта</h3>
+										</div>
+									</div>
+									<div class="col-12 col-lg-3 col-md-5">
+											<div class="box-text">
+												<p>VISA, Mastercard, Мир, Сбербанк, Альфабанк, ВТБ, Тинькофф и другие</p>
+											</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-3">
+										<div class="tariffs-card__percent">(от 3%)</div>
+									</div>
+								</div>
+							</div>
+							<div class="tariffs-card">
+								<div class="row align-items-center">
+									<div class="col-12 col-lg-4 col-md-4">
+										<div class="tariffs-card__name">
+											<div class="tariffs-card__icon"><img src="img/tariffs-icon2.svg" alt=""></div>
+											<h3>QIWI</h3>
+										</div>
+									</div>
+									<div class="col-12 col-lg-3 col-md-5">
+										<div class="box-text">
+											<p>Кошельки QIWI</p>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-3">
+										<div class="tariffs-card__percent">(от 2%)</div>
+									</div>
+								</div>
+							</div>
+							<div class="tariffs-card">
+								<div class="row align-items-center">
+									<div class="col-12 col-lg-4 col-md-4">
+										<div class="tariffs-card__name">
+											<div class="tariffs-card__icon"><img src="img/tariffs-icon3.svg" alt=""></div>
+											<h3>Криптовалюта</h3>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-5">
+										<div class="box-text">
+											<p>Bitcoin, Ethereum, Bitcoin Cash, DashCoin, Zcash</p>
+										</div>
+									</div>
+									<div class="col-12 col-lg-3 col-md-3">
+										<div class="tariffs-card__percent">(от 2.5%)</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">...</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="advantages">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-3 mb-50">
+					<div class="advantages-box">
+						<div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+						<div class="advantages-box__text">
+							<h3>Вывод криптовалюты</h3>
+							<p>Вы можете вывести не только на карту, QIWI, но и в криптовалюту</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-50">
+					<div class="advantages-box">
+						<div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+						<div class="advantages-box__text">
+							<h3>Круглосуточная поддержка</h3>
+							<p>Есть вопросы? Мы ответим в любое время суток</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-50">
+					<div class="advantages-box">
+						<div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+						<div class="advantages-box__text">
+							<h3>Быстрая интеграция</h3>
+							<p>Более 40 готовых модулей для CMS и CRM</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-3 mb-50">
+					<div class="advantages-box">
+						<div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+						<div class="advantages-box__text">
+							<h3>Приём платежей из-за рубежа</h3>
+							<p>Мы предоставляем услуги по организации коммерческих операций с электронными деньгами по всему миру</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="modules" id="modules">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4">
+					<h2>Готовые модули <br>и интеграции</h2>
+				</div>
+			</div>
+
+			<div class="row horizontal-scroll">
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module1.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module2.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module3.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module4.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module5.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module6.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module7.svg" alt="">
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-20">
+					<div class="modules-box">
+						<img src="img/module8.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="steps">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4">
+					<h2>Три простых шага для подключения</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 mb-80">
+					<div class="steps-box">
+						<div class="number">1</div>
+						<div class="steps-box__wrapper">
+							<div class="steps-box__icon"><img src="img/steps-icon1.svg" alt=""></div>
+							<h3>Оставьте заявка на подключение</h3>
+							<div class="box-text">
+								<p>Оставьте заявку на подключение и мыс Вами свяжемся в течении часа для обсуждения подключения</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-80">
+					<div class="steps-box">
+						<div class="number">2</div>
+						<div class="steps-box__wrapper">
+							<div class="steps-box__icon"><img src="img/steps-icon2.svg" alt=""></div>
+							<h3>Консультация от 1n.io <br>и подключение</h3>
+							<div class="box-text">
+								<p>Вы получите профессиональную консультацию от нашей команды</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4 mb-80">
+					<div class="steps-box">
+						<div class="number">3</div>
+						<div class="steps-box__wrapper">
+							<div class="steps-box__icon"><img src="img/steps-icon3.svg" alt=""></div>
+							<h3>Готово! Теперь вы можете принимать платежи</h3>
+							<div class="box-text">
+								<p>Принимайте платежи и зарабатывайте. Мы можем подсказать вам, как заработать больше</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="callback">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4">
+					<h2>Оставьте заявку на подключение</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+					<div class="callback-wrapper">
+						<form method="post" class="form-callback">
+							<label><input type="text" placeholder="Ваш сайт" name="web_site"></label>
+							<label><input type="text" placeholder="Ваше имя" name="name"></label>
+							<label><input type="text" placeholder="Ваш номер телефона" name="phone"></label>
+							<label><input type="text" placeholder="Ваша почта" name="mail"></label>
+							<button type="submit" class="btn btn-accent">Отправить заявку</button>
+							<div class="consent">Нажимая кнопку “Отправить заявку” вы даёте своё согласие на обработку ваших
+								персональных данных</div>
+						</form>
+
+						<div class="callback-image"><img src="img/callback-icon.svg" alt=""></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex align-items-center flex-wrap">
+					<a href="index.html" class="logo">
+						<span class="logo-icon"><img src="img/logo.svg" alt=""></span>
+					</a>
+
+					<div class="copyright">© 2022 «1n.io»</div>
+
+					<ul class="menu my-ul">
+						<li><a href="#services" class="go_to">Услуги</a></li>
+						<li><a href="#tariffs" class="go_to">Тарифы</a></li>
+						<li><a href="#modules" class="go_to">Готовые модули</a></li>
+						<li><a href="#help" class="go_to">Помощь</a></li>
+					</ul>
+
+					<ul class="list-social my-ul">
+						<li><a href="#" class="tg-link"><img src="img/telegram.svg" alt=""></a></li>
+						<li><a href="#"><img src="img/mail.svg" alt=""></a></li>
+					</ul>
+
+					<a href="#" class="btn-scroll-top">
+						<span class="btn-scroll-top__icon"><img src="img/arrow-top.svg" alt=""></span>
+						<span class="btn-scroll-top__text">Наверх</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- add plugins js-->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- add plugins js end-->
+
+	<script src="js/common.js"></script>
+
+</body>
+
+</html>

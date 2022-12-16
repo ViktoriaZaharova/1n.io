@@ -1,0 +1,271 @@
+@import 'fonts'
+@import 'vars'
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+	display: block
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: normal
+	font-family: $default-font
+	font-weight: normal
+	background: #2E2759
+	color: #FFFFFF
+	z-index: 1
+	&::before, &::after
+		content: ''
+		position: absolute
+		z-index: -1
+		transform: matrix(0.97, 0.26, 0.26, -0.97, 0, 0)
+		background: linear-gradient(180deg, #7156E3 0%, rgba(35, 40, 63, 0.4) 31.34%)
+		border-radius: 50%
+	&::before
+		width: 2202px
+		height: 2202px
+		top: -1105px
+		left: -216px
+	&::after
+		transform: rotate(-180deg)
+		opacity: 0.8
+		top: -720px
+		right: -455px		
+		width: 1256px
+		height: 1256px	
+
+html, body
+	overflow-x: hidden		
+
+img
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+a
+	display: block
+	text-decoration: none
+	transition: .3s ease
+	outline: none
+	width: fit-content
+
+	&:hover, &:focus
+		text-decoration: none
+
+input, textarea, select
+	outline: none
+	box-shadow: none
+	appearance: none
+	padding: 0 20px
+	box-sizing: border-box
+	font-family: $default-font
+	border: 1px solid #C2CFEA
+	border-radius: 10px
+	width: 100%
+	height: 54px
+	background: transparent
+	color: #8E9FC5
+	font-size: 14px
+	&::placeholder
+		color: #8E9FC5
+
+	&:hover, &:focus
+		outline: none
+		box-shadow: none
+
+label
+	display: block
+	width: 100%
+	margin: 0 0 20px
+	&:last-child
+		margin: 0
+
+textarea
+	resize: none
+	padding: 12px 17px
+	height: 103px
+
+.consent
+	text-align: center
+	width: 100%
+	margin: 10px auto 0
+	color: #8E9FC5
+	font-size: 10px
+	opacity: 0.6	
+
+button, .btn
+	outline: none
+	transition: .3s ease
+	cursor: pointer
+	box-shadow: none
+	font-family: $default-font
+	padding: 0
+	margin: 0
+	border: none
+	border-radius: 0
+
+	&:hover, &:focus
+		outline: none
+		box-shadow: none
+
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	padding: 10px 33.5px
+	text-transform: uppercase
+
+	font-size: 16px
+	font-weight: 500
+	height: 49px
+	border-radius: 30px
+	transition: 0.3s ease
+
+.btn-accent
+	background: $accent
+	color: #fff
+	&:hover
+		background: $hover
+		color: #fff	
+
+.svg-icon
+	display: inline-block
+	width: 100%
+	height: 100%
+	transition: .3s ease
+
+strong, b
+	font-weight: bold
+	display: inline-block
+
+ul, ol
+	padding: 0 0 0 20px
+
+.my-ul
+	list-style: none
+	padding: 0
+
+.list-dots
+	list-style-type: disc
+
+.slick-slider
+	width: 100%
+
+.slick-slide
+	outline: none
+
+.color-accent
+	color: $accent
+
+.container
+	max-width: 1200px
+	padding: 0 10px
+
+.row
+	margin: 0 -10px
+	>*
+		padding: 0 10px	
+
+.mb-20
+	margin-bottom: 20px			
+
+.mb-50
+	margin-bottom: 50px			
+
+.mb-80
+	margin-bottom: 80px	
+
+//checkbox my
+.label-checkbox
+	position: relative
+	display: flex
+	align-items: flex-start
+	color: rgba(255, 255, 255, 0.5)
+	font-size: 14px
+	margin: 15px 0 0
+	line-height: 1.14
+
+.inp-check
+	display: none
+
+.checkbox-custom
+	margin: 0 12px 0 0
+	position: relative
+	border-radius: 6px
+	background-color: #fff
+	width: 16px
+	height: 16px
+	min-width: 16px
+	cursor: pointer
+
+.inp-check:checked ~ .checkbox-custom
+	background: #fff url("../img/check-black.svg") no-repeat center
+	background-size: 8px
+//checkbox my end
+
+h1, h2
+	width: 100%
+	font-size: 36px
+	font-weight: 500
+	text-transform: uppercase
+	margin: 0 0 30px	
+
+h2
+	margin: 0 0 60px
+	
+
+.nav-tabs
+	width: fit-content
+	margin: 0 0 60px auto
+	justify-content: flex-end
+	border: none
+	font-size: 24px
+	border: 1px solid #6D3BF7
+	border-radius: 30px
+	padding: 6px
+	.nav-link
+		margin: 0
+		border-radius: 21px
+		border: none
+		color: #fff
+		padding: 6.5px 35px
+		&.active
+			background: #6D3BF7
+			color: #fff
+			
