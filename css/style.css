@@ -345,8 +345,23 @@ h2 {
   border: none;
   color: #fff;
   padding: 6.5px 35px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .nav-tabs .nav-link.active {
   background: #6D3BF7;
   color: #fff;
+}
+
+.fade.tab-pane {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
+  border-radius: 30px;
+}
+
+.btn-group > .btn-group:not(:first-child), .btn-group > .btn:not(:first-child) {
+  margin-left: 0;
 }

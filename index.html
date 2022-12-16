@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>1n.io</title>
 
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -22,6 +22,42 @@
 </head>
 
 <body>
+
+	<div class="mobile-menu">
+		<div class="mobile-menu__head">
+			<a href="index.html" class="logo">
+				<span class="logo-icon"><img src="img/logo.svg" alt=""></span>
+				<span class="logo-text">1n<span class="color-accent">.io</span></span>
+			</a>
+
+			<a href="#" class="mobile-menu__close">
+				<svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+			</a>
+		</div>
+		<div class="mobile-menu__body">
+			<div class="btn-group">
+				<a href="#" class="link-entrance">
+					<span class="link-entrance__icon"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#entrance"></use>
+						</svg></span>
+					<span class="link-entrance__text">Войти</span>
+				</a>
+				<a href="#" class="btn btn-accent">Подключить</a>
+			</div>
+
+			<ul class="menu my-ul">
+				<li><a href="#services" class="go_to">Услуги</a></li>
+				<li><a href="#tariffs" class="go_to">Тарифы</a></li>
+				<li><a href="#modules" class="go_to">Готовые модули</a></li>
+				<li><a href="#help" class="go_to">Помощь</a></li>
+			</ul>
+
+			<ul class="list-social my-ul">
+				<li><a href="#" class="tg-link"><img src="img/telegram.svg" alt=""></a></li>
+				<li><a href="#"><img src="img/mail.svg" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
 
 	<header>
 		<div class="container">
@@ -45,6 +81,8 @@
 							</svg></span>
 						<span class="link-entrance__text">Войти</span>
 					</a>
+
+					<a href="#" class="btn-burger"><svg class="svg-icon"><use xlink:href="img/sprite.svg#burger"></use></svg></a>
 				</div>
 			</div>
 		</div>
@@ -53,7 +91,7 @@
 	<main class="home">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="home-content">
 						<div class="connection">Быстрое подключение</div>
 						<h1>Универсальный сервис для приема онлайн-платежей</h1>
@@ -84,7 +122,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-lg-6">
+				<div class="col-12 col-md-6">
 					<div class="home-image"><img src="img/home-image.png" alt=""></div>
 				</div>
 			</div>
@@ -169,7 +207,44 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">...</div>
+						<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-tab2">
+							<div class="tariffs-card">
+								<div class="row align-items-center">
+									<div class="col-12 col-lg-4 col-md-4">
+										<div class="tariffs-card__name">
+											<div class="tariffs-card__icon"><img src="img/tariffs-icon1.svg" alt=""></div>
+											<h3>Карта</h3>
+										</div>
+									</div>
+									<div class="col-12 col-lg-3 col-md-5">
+										<div class="box-text">
+											<p>VISA, Mastercard, Мир, Сбербанк, Альфабанк, ВТБ, Тинькофф и другие</p>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-3">
+										<div class="tariffs-card__percent">(от 3%)</div>
+									</div>
+								</div>
+							</div>
+							<div class="tariffs-card">
+								<div class="row align-items-center">
+									<div class="col-12 col-lg-4 col-md-4">
+										<div class="tariffs-card__name">
+											<div class="tariffs-card__icon"><img src="img/tariffs-icon2.svg" alt=""></div>
+											<h3>QIWI</h3>
+										</div>
+									</div>
+									<div class="col-12 col-lg-3 col-md-5">
+										<div class="box-text">
+											<p>Кошельки QIWI</p>
+										</div>
+									</div>
+									<div class="col-12 col-lg-5 col-md-3">
+										<div class="tariffs-card__percent">(от 2%)</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -179,7 +254,7 @@
 	<div class="advantages">
 		<div class="container">
 			<div class="row">
-				<div class="col-12 col-md-6 col-lg-3 mb-50">
+				<div class="col-12 col-sm-6 col-lg-3 mb-50">
 					<div class="advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
 						<div class="advantages-box__text">
@@ -188,7 +263,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3 mb-50">
+				<div class="col-12 col-sm-6 col-lg-3 mb-50">
 					<div class="advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
 						<div class="advantages-box__text">
@@ -197,7 +272,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3 mb-50">
+				<div class="col-12 col-sm-6 col-lg-3 mb-50">
 					<div class="advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
 						<div class="advantages-box__text">
@@ -206,7 +281,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-12 col-md-6 col-lg-3 mb-50">
+				<div class="col-12 col-sm-6 col-lg-3 mb-50">
 					<div class="advantages-box">
 						<div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
 						<div class="advantages-box__text">
