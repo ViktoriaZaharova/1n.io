@@ -354,8 +354,8 @@ h2 {
 }
 
 .fade.tab-pane {
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
+  -webkit-transition: none;
+  transition: none;
 }
 
 .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
