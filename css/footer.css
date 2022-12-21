@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap");
 footer {
   padding: 100px 0;
   position: relative;
@@ -66,6 +66,7 @@ footer .menu {
 .copyright {
   font-size: 12px;
   color: #C2CFEA;
+  margin: 0 0 0 8px;
 }
 
 .btn-scroll-top {

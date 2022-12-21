@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500&display=swap");
 header {
   padding: 27px 0;
   position: absolute;
@@ -18,16 +18,14 @@ header {
       -ms-flex-align: center;
           align-items: center;
   color: #fff;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
 }
 .logo:hover {
-  color: #fff;
+  color: #6D3BF7;
 }
 .logo .color-accent {
   color: #6D3BF7;
-}
-
-.logo-text {
-  font-family: "Happy Monkey", sans-serif;
 }
 
 .logo-icon {
@@ -40,8 +38,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 5px 0 0;
-  width: 40px;
+  margin: 0 6px 0 0;
+  width: 13px;
 }
 
 .menu {
