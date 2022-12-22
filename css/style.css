@@ -153,6 +153,7 @@ label {
   display: block;
   width: 100%;
   margin: 0 0 20px;
+  position: relative;
 }
 label:last-child {
   margin: 0;
@@ -260,6 +261,14 @@ ul, ol {
   color: #6D3BF7;
 }
 
+.color-white {
+  color: #fff;
+}
+
+a.color-white:hover {
+  color: #6D3BF7;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 10px;
@@ -289,10 +298,10 @@ ul, ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
   font-size: 14px;
   margin: 15px 0 0;
   line-height: 1.14;
@@ -303,19 +312,20 @@ ul, ol {
 }
 
 .checkbox-custom {
-  margin: 0 12px 0 0;
+  margin: 0 10px 0 0;
   position: relative;
   border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
+  background: transparent;
+  border: 1px solid #6D3BF7;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
   cursor: pointer;
 }
 
 .inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+  background: #6D3BF7 url("../img/checked.svg") no-repeat center;
+  background-size: 16px;
 }
 
 h1, h2 {

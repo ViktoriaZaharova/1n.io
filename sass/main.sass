@@ -119,36 +119,33 @@
 	height: 100%
 	position: relative
 	z-index: 1
+	background: linear-gradient(106deg, rgba(38, 42, 69, 0.29) 3.15%, rgba(31, 38, 54, 0) 99.9%)
+	backdrop-filter: blur(40px)
+	padding: 40px 30px
 	border-radius: 20px
 	border: 2px solid rgba(74, 63, 146, 1)
-	&__wrapper
-		width: 100%
-		height: 100%
-		position: relative
-		z-index: 2
-		background: linear-gradient(106deg, rgba(38, 42, 69, 0.29) 3.15%, rgba(31, 38, 54, 0) 99.9%)
-		backdrop-filter: blur(40px)
-		padding: 40px 30px
-		border-radius: 20px
 	.number
-		z-index: -1
-		position: absolute
-		left: 50%
-		top: -73px
-		transform: translate(-50%,0)
-		background: linear-gradient(180deg, #6D3BF7 45.1%, #AD8FFF 100%)
+		background: linear-gradient(179.37deg, #6D3BF7 0.55%, #2D2759 76.58%)
 		-webkit-text-fill-color: transparent
 		-webkit-background-clip: text
 		background-clip: text
 		text-fill-color: transparent
-		font-size: 100px
+		font-size: 64px
 		font-weight: 900
+		line-height: 128%
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+		flex-wrap: wrap	
+		margin: 0 0 68px
 	&__icon
 		@include d-flex
 		width: 70px
 		height: 70px
 		min-width: 70px
-		margin: 0 0 68px
+		
 	h3
 		font-size: 24px
 		margin: 0 0 20px

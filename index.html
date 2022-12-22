@@ -5,8 +5,10 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>1n.io</title>
+	<title>1n - Сервис для приема онлайн-платежей</title>
 
+	<meta name="description"
+		content="Платежная система с самыми популярными способами оплаты для ваших покупателей. Быстрое подключение. Простая интеграция.">
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
@@ -31,12 +33,14 @@
 			</a>
 
 			<a href="#" class="mobile-menu__close">
-				<svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg>
+				<svg class="svg-icon">
+					<use xlink:href="img/sprite.svg#close"></use>
+				</svg>
 			</a>
 		</div>
 		<div class="mobile-menu__body">
 			<div class="btn-group">
-				<a href="#" class="link-entrance">
+				<a href="#" class="link-entrance" data-bs-toggle="modal" data-bs-target="#entranceModal">
 					<span class="link-entrance__icon"><svg class="svg-icon">
 							<use xlink:href="img/sprite.svg#entrance"></use>
 						</svg></span>
@@ -49,7 +53,7 @@
 				<li><a href="#services" class="go_to">Услуги</a></li>
 				<li><a href="#tariffs" class="go_to">Тарифы</a></li>
 				<li><a href="#modules" class="go_to">Готовые модули</a></li>
-				<li><a href="#help" class="go_to">Помощь</a></li>
+				<li><a href="#callback" class="go_to">Помощь</a></li>
 			</ul>
 
 			<ul class="list-social my-ul">
@@ -72,17 +76,19 @@
 						<li><a href="#services" class="go_to">Услуги</a></li>
 						<li><a href="#tariffs" class="go_to">Тарифы</a></li>
 						<li><a href="#modules" class="go_to">Готовые модули</a></li>
-						<li><a href="#help" class="go_to">Помощь</a></li>
+						<li><a href="#callback" class="go_to">Помощь</a></li>
 					</ul>
 
-					<a href="#" class="link-entrance">
+					<a href="#" class="link-entrance" data-bs-toggle="modal" data-bs-target="#entranceModal">
 						<span class="link-entrance__icon"><svg class="svg-icon">
 								<use xlink:href="img/sprite.svg#entrance"></use>
 							</svg></span>
 						<span class="link-entrance__text">Войти</span>
 					</a>
 
-					<a href="#" class="btn-burger"><svg class="svg-icon"><use xlink:href="img/sprite.svg#burger"></use></svg></a>
+					<a href="#" class="btn-burger"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#burger"></use>
+						</svg></a>
 				</div>
 			</div>
 		</div>
@@ -161,9 +167,9 @@
 										</div>
 									</div>
 									<div class="col-12 col-lg-3 col-md-5">
-											<div class="box-text">
-												<p>VISA, Mastercard, Мир, Сбербанк, Альфабанк, ВТБ, Тинькофф и другие</p>
-											</div>
+										<div class="box-text">
+											<p>VISA, Mastercard, Мир, Сбербанк, Альфабанк, ВТБ, Тинькофф и другие</p>
+										</div>
 									</div>
 									<div class="col-12 col-lg-5 col-md-3">
 										<div class="tariffs-card__percent">(от 3%)</div>
@@ -251,7 +257,7 @@
 		</div>
 	</section>
 
-	<div class="advantages">
+	<div class="advantages" id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-sm-6 col-lg-3 mb-50">
@@ -358,37 +364,37 @@
 			<div class="row">
 				<div class="col-12 col-md-6 col-lg-4 mb-80">
 					<div class="steps-box">
-						<div class="number">1</div>
-						<div class="steps-box__wrapper">
+						<div class="steps-box__head">
 							<div class="steps-box__icon"><img src="img/steps-icon1.svg" alt=""></div>
-							<h3>Оставьте заявка на подключение</h3>
-							<div class="box-text">
-								<p>Оставьте заявку на подключение и мыс Вами свяжемся в течении часа для обсуждения подключения</p>
-							</div>
+							<div class="number">1</div>
+						</div>
+						<h3>Оставьте заявка на подключение</h3>
+						<div class="box-text">
+							<p>Оставьте заявку на подключение и мыс Вами свяжемся в течении часа для обсуждения подключения</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-4 mb-80">
 					<div class="steps-box">
-						<div class="number">2</div>
-						<div class="steps-box__wrapper">
+						<div class="steps-box__head">
 							<div class="steps-box__icon"><img src="img/steps-icon2.svg" alt=""></div>
-							<h3>Консультация от 1n.io <br>и подключение</h3>
-							<div class="box-text">
-								<p>Вы получите профессиональную консультацию от нашей команды</p>
-							</div>
+							<div class="number">2</div>
+						</div>
+						<h3>Консультация от 1n.io <br>и подключение</h3>
+						<div class="box-text">
+							<p>Вы получите профессиональную консультацию от нашей команды</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-6 col-lg-4 mb-80">
 					<div class="steps-box">
-						<div class="number">3</div>
-						<div class="steps-box__wrapper">
+						<div class="steps-box__head">
 							<div class="steps-box__icon"><img src="img/steps-icon3.svg" alt=""></div>
-							<h3>Готово! Теперь вы можете принимать платежи</h3>
-							<div class="box-text">
-								<p>Принимайте платежи и зарабатывайте. Мы можем подсказать вам, как заработать больше</p>
-							</div>
+							<div class="number">3</div>
+						</div>
+						<h3>Готово! Теперь вы можете принимать платежи</h3>
+						<div class="box-text">
+							<p>Принимайте платежи и зарабатывайте. Мы можем подсказать вам, как заработать больше</p>
 						</div>
 					</div>
 				</div>
@@ -408,11 +414,11 @@
 				<div class="col-12">
 					<div class="callback-wrapper">
 						<form method="post" class="form-callback">
-							<label><input type="text" placeholder="Ваш сайт" name="web_site"></label>
-							<label><input type="text" placeholder="Ваше имя" name="name"></label>
-							<label><input type="text" placeholder="Ваш номер телефона" name="phone"></label>
-							<label><input type="text" placeholder="Ваша почта" name="mail"></label>
-							<button type="submit" class="btn btn-accent" disabled>Отправить заявку</button>
+							<label><input onkeyup='checkParams()' type="text" placeholder="Ваш сайт" name="web_site"></label>
+							<label><input onkeyup='checkParams()' type="text" placeholder="Ваше имя" name="name"></label>
+							<label><input onkeyup='checkParams()' type="text" placeholder="Ваш номер телефона" name="phone"></label>
+							<label><input onkeyup='checkParams()' type="text" placeholder="Ваша почта" name="mail"></label>
+							<button type="submit" class="btn btn-accent btn-submit" disabled>Отправить заявку</button>
 							<div class="consent">Нажимая кнопку “Отправить заявку” вы даёте своё согласие на обработку ваших
 								персональных данных</div>
 						</form>
@@ -439,12 +445,12 @@
 						<li><a href="#services" class="go_to">Услуги</a></li>
 						<li><a href="#tariffs" class="go_to">Тарифы</a></li>
 						<li><a href="#modules" class="go_to">Готовые модули</a></li>
-						<li><a href="#help" class="go_to">Помощь</a></li>
+						<li><a href="#callback" class="go_to">Помощь</a></li>
 					</ul>
 
 					<ul class="list-social my-ul">
 						<li><a href="#" class="tg-link"><img src="img/telegram.svg" alt=""></a></li>
-						<li><a href="#"><img src="img/mail.svg" alt=""></a></li>
+						<li><a href="mailto:help@1n.io" target="_blank"><img src="img/mail.svg" alt=""></a></li>
 					</ul>
 
 					<a href="#" class="btn-scroll-top">
@@ -455,6 +461,67 @@
 			</div>
 		</div>
 	</footer>
+
+
+	<!-- Modal -->
+	<div class="modal fade" id="entranceModal" tabindex="-1" aria-labelledby="entranceModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Вход</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="Введите почту" name="mail">
+						</label>
+						<label>
+							<input type="password" placeholder="Пароль" name="password" class="input-password">
+							<span class="btn-view-password"></span>
+						</label>
+
+						<label class="label-checkbox">
+							<input type="checkbox" checked class="inp-check" name="checkbox">
+							<div class="checkbox-custom"></div>
+							<div class="checkbox-text">Запомнить меня</div>
+						</label>
+
+						<button type="submit" class="btn btn-accent">Войти</button>
+						<a href="#" class="color-white link-password" data-bs-toggle="modal" data-bs-target="#passwordModal"
+							data-bs-dismiss="modal">Восстановить пароль</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="passwordModal" tabindex="-1" aria-labelledby="passwordModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Восстановление пароля</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+							<use xlink:href="img/sprite.svg#close"></use>
+						</svg></button>
+
+					<div class="box-text">
+						<p>Письмо с новым паролем будет отправленона вашу почту</p>
+					</div>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form">
+						<label>
+							<input type="text" placeholder="Введите почту" name="mail">
+						</label>
+						<button type="submit" class="btn btn-accent">Восстановить</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>

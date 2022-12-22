@@ -264,4 +264,20 @@
   .steps-box .box-text {
     font-size: 14px;
   }
+  .modal-dialog {
+    margin: 20px auto;
+    max-width: 330px;
+  }
+  .modal-content {
+    border-radius: 20px;
+    padding: 30px;
+  }
+}
+@media (max-width: 420px) {
+  .modal-header .box-text {
+    display: none;
+  }
+  .modal-title {
+    max-width: 200px;
+  }
 }
