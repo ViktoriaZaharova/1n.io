@@ -54,20 +54,24 @@ body
 		background: linear-gradient(180deg, #7156E3 0%, rgba(35, 40, 63, 0.4) 31.34%)
 		border-radius: 50%
 	&::before
-		width: 2202px
-		height: 2202px
-		top: -1105px
-		left: -216px
+		width: 1920px
+		height: 1292px
+		top: 684px
+		right: 0px
+		background: url('../img/figure.svg') no-repeat center
+		background-size: 100%
+		border-radius: 0
+		transform: rotate(350deg)
 	&::after
 		transform: rotate(-180deg)
 		opacity: 0.8
 		top: -720px
-		right: -455px		
+		right: -455px
 		width: 1256px
-		height: 1256px	
+		height: 1256px
 
 html, body
-	overflow-x: hidden		
+	overflow-x: hidden
 
 img
 	display: block
@@ -126,7 +130,7 @@ textarea
 	margin: 10px auto 0
 	color: #8E9FC5
 	font-size: 10px
-	opacity: 0.6	
+	opacity: 0.6
 
 button, .btn
 	outline: none
@@ -162,7 +166,7 @@ button, .btn
 	color: #fff
 	&:hover
 		background: $hover
-		color: #fff	
+		color: #fff
 
 .svg-icon
 	display: inline-block
@@ -200,16 +204,16 @@ ul, ol
 .row
 	margin: 0 -10px
 	>*
-		padding: 0 10px	
+		padding: 0 10px
 
 .mb-20
-	margin-bottom: 20px			
+	margin-bottom: 20px
 
 .mb-50
-	margin-bottom: 50px			
+	margin-bottom: 50px
 
 .mb-80
-	margin-bottom: 80px	
+	margin-bottom: 80px
 
 //checkbox my
 .label-checkbox
@@ -244,11 +248,10 @@ h1, h2
 	font-size: 36px
 	font-weight: 500
 	text-transform: uppercase
-	margin: 0 0 30px	
+	margin: 0 0 30px
 
 h2
 	margin: 0 0 60px
-	
 
 .nav-tabs
 	width: fit-content
@@ -271,11 +274,10 @@ h2
 			color: #fff
 
 .fade.tab-pane
-	transition: none		
-			
+	transition: .4s ease
+
 .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:nth-child(n+3), .btn-group>:not(.btn-check)+.btn
 	border-radius: 30px
 
 .btn-group>.btn-group:not(:first-child), .btn-group>.btn:not(:first-child)
-	margin-left: 0	
-
+	margin-left: 0

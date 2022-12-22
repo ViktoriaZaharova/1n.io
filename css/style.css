@@ -61,10 +61,15 @@ body::before, body::after {
   border-radius: 50%;
 }
 body::before {
-  width: 2202px;
-  height: 2202px;
-  top: -1105px;
-  left: -216px;
+  width: 1920px;
+  height: 1292px;
+  top: 684px;
+  right: 0px;
+  background: url("../img/figure.svg") no-repeat center;
+  background-size: 100%;
+  border-radius: 0;
+  -webkit-transform: rotate(350deg);
+          transform: rotate(350deg);
 }
 body::after {
   -webkit-transform: rotate(-180deg);
@@ -354,8 +359,8 @@ h2 {
 }
 
 .fade.tab-pane {
-  -webkit-transition: none;
-  transition: none;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 .btn-group > .btn-group:not(:first-child) > .btn, .btn-group > .btn:nth-child(n+3), .btn-group > :not(.btn-check) + .btn {
